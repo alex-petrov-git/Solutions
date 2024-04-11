@@ -1,0 +1,38 @@
+\subsection{Perturbations. General words.}
+
+Let's consider the parameters of the flow, which is described by equations \eqref{Eu-cylindrical}, in the form of the sum of the mean and the disturbed flows:
+\begin{equation}
+	p \rightarrow p_0 + p,\quad \rho \rightarrow \rho_0 + \rho,\quad T \rightarrow T_0 + T,\quad u_{\theta} \rightarrow u_{\theta 0} + u_{\theta},\quad u_r \rightarrow u_r
+\end{equation}
+
+Let's also assume that the perturbations are small compared to the mean flow. Substitution of these in governing equations gives us:
+\begin{equation}
+	\label{PF_Euler}
+	\left\{
+	\begin{aligned}
+		& \dfrac{\partial \rho}{\partial t} + \dfrac{\partial \rho_0 u_r}{\partial r} + \dfrac{\rho_0 u_r}{r} + \dfrac{1}{r}\dfrac{\partial \rho_0 u_{\theta}}{\partial \theta} + \dfrac{1}{r} \dfrac{\partial \rho u_{\theta 0}}{\partial \theta} = 0 \\
+		& \dfrac{\partial u_r}{\partial t} + \dfrac{u_{\theta 0}}{r}\dfrac{\partial u_r}{\partial \theta} - \dfrac{2 u_{\theta}u_{\theta 0}}{r} = - \dfrac{1}{\rho_0}\dfrac{\partial p}{\partial r} + \dfrac{\rho}{\rho_0^2}\dfrac{\partial p_0}{\partial r} \\
+		& \dfrac{\partial u_{\theta}}{\partial t} + u_r \dfrac{\partial u_{\theta 0}}{\partial r} + \dfrac{u_{\theta 0}}{r}\dfrac{\partial u_{\theta}}{\partial \theta} + \dfrac{u_r u_{\theta 0}}{r} = - \dfrac{1}{\rho_0 r}\dfrac{\partial p}{\partial \theta} \\
+		& \rho_0 c_p \left(\dfrac{\partial T}{\partial t} + \dfrac{u_{\theta 0}}{r}\dfrac{\partial T}{\partial \theta}\right) - \dfrac{\partial p}{\partial t} - \dfrac{u_{\theta 0}}{r}\dfrac{\partial p}{\partial \theta} = 0 \\
+		& p = \rho_0 R T + \rho R T_0
+	\end{aligned}
+	\right.
+\end{equation}
+
+If we denote the differential operator as
+\begin{equation}
+	\left(\dfrac{\partial}{\partial t} + \dfrac{u_{\theta 0}}{r}\dfrac{\partial}{\partial \theta}\right) = D
+\end{equation}
+then equations \eqref{PF_Euler} transform into
+\begin{equation}
+	\left\{
+	\begin{aligned}
+		& D\rho + \rho_0\dfrac{\partial u_r}{\partial r} + \left[\left(\dfrac{d \rho_0}{dr}\right) + \dfrac{\rho_0}{r}\right] u_r + \dfrac{\rho_0}{r}\dfrac{\partial u_{\theta}}{\partial \theta} = 0 \\
+		& D u_r - \dfrac{2 u_{\theta 0}}{r}u_{\theta} + \dfrac{1}{\rho_0}\dfrac{\partial p}{\partial r} - \dfrac{u_{\theta 0}^2}{\rho_0 r}\rho = 0 \\
+		& D u_\theta + \left[\left(\dfrac{du_{\theta 0}}{dr}\right) + \dfrac{u_{\theta 0}}{r}\right] u_r + \dfrac{1}{\rho_0 r}\dfrac{\partial p}{\partial \theta} = 0 \\
+		& D p = c^2 D \rho, \quad c^2 = \gamma R T_0
+	\end{aligned}
+	\right.
+\end{equation}
+
+\textbf{*to be continuous*}

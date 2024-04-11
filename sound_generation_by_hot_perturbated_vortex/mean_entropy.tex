@@ -1,0 +1,43 @@
+\subsection{Mean flow. Entropy is semi-constant}
+
+Let us express the density from the expression for entropy and substitute it into the momentum equation.
+\begin{equation}
+	\dfrac{u^2_{\theta}}{r} = \dfrac{1}{\rho}\dfrac{dp}{dr} = \dfrac{1}{C p^{1/\gamma}}\dfrac{dp}{dr} = \dfrac{\gamma}{C(\gamma - 1)}\dfrac{d p^{(\gamma - 1)/\gamma}}{dr}
+\end{equation}
+
+Further solution is carried out as in the case of semi-constant temperature or density.
+\begin{equation}
+	p(r) = \left\{
+	\begin{aligned}
+		& \left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma} - \dfrac{C_1(\gamma - 1)\Omega^2}{8\gamma}(a^2 - r^2)\right)^{\dfrac{\gamma}{\gamma - 1}}, \, r \leqslant a  \\
+		& \left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma}\left(\dfrac{a}{r}\right)^2\right)^{\dfrac{\gamma}{\gamma - 1}}, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	\rho(r) = \left\{
+	\begin{aligned}
+		& C_1 \cdot \left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma} - \dfrac{C_1(\gamma - 1)\Omega^2}{8\gamma}(a^2 - r^2)\right)^{\dfrac{1}{\gamma - 1}}, \, r \leqslant a  \\
+		& C_2 \cdot \left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma}\left(\dfrac{a}{r}\right)^2\right)^{\dfrac{1}{\gamma - 1}}, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	T(r) = \dfrac{1}{R} \dfrac{p}{\rho} = \dfrac{c_v}{\gamma - 1} \cdot \left\{
+	\begin{aligned}
+		& \dfrac{1}{C_1}\left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma} - \dfrac{C_1(\gamma - 1)\Omega^2}{8\gamma}(a^2 - r^2)\right), \, r \leqslant a  \\
+		& \dfrac{1}{C_2}\left(p_{\infty}^{(\gamma - 1)/\gamma} - \dfrac{C_2(\gamma - 1)\Omega^2a^2}{8\gamma}\left(\dfrac{a}{r}\right)^2\right), \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	T\nabla S = T \dfrac{dS}{dr} = \left\{
+	\begin{aligned}
+		& 0, \, r \leqslant a \\
+		& 0, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}

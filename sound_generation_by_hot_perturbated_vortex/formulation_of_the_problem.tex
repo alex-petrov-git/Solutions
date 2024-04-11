@@ -1,0 +1,75 @@
+\subsection{Formulation of the problem.}
+
+Let's consider the distributed homogeneous vortex located in a resting infinite space filled with an ideal gas. To create simple entropy inhomogeneities, \textbf{mean} flow can be defined in three ways:
+\begin{enumerate}
+	\item Semi-constant density:
+	\begin{equation}
+		\label{hv-rho}
+		\rho(r) = \left\{
+		\begin{aligned}
+			& \rho_1 = \text{const}, \, r \leqslant a \\
+			& \rho_2 = \text{const}, \, r > a
+		\end{aligned}
+		\right.
+	\end{equation}
+	\item Semi-constant temperature:
+	\begin{equation}
+		\label{hv-temp}
+		T(r) = \left\{
+		\begin{aligned}
+			& T_1 = \text{const}, \, r \leqslant a \\
+			& T_2 = \text{const}, \, r > a
+		\end{aligned}
+		\right.
+	\end{equation}
+	\item Semi-constant entropy:
+	\begin{equation}
+		\label{hv-ent}
+		S(r) = \left\{
+		\begin{aligned}
+			& S_1 = \text{const}, \, r \leqslant a \\
+			& S_2 = \text{const}, \, r > a
+		\end{aligned}
+		\right.
+	\end{equation}
+\end{enumerate}
+
+Besides let the pressure at infinity $p(\infty) = p_{\infty}$ be known and the vorticity distribution be given:
+\begin{equation}
+	\Omega(r) = \left\{
+	\begin{aligned}
+		& \Omega = \text{const}, \, r \leqslant a \\
+		& 0, \, r > a.
+	\end{aligned}
+	\right.
+\end{equation}
+
+Governing equations are compressible Euler's equations. Since the problem has cylindrical symmetry, it is convenient to work in the corresponding coordinates:
+
+\begin{equation}
+	\label{Eu-cylindrical}
+	\left\{
+	\begin{aligned}
+		& \dfrac{\partial \rho}{\partial t} + \text{div } \rho \boldsymbol{u} = 0 \\
+		& \dfrac{\partial \boldsymbol{u}}{\partial t} + (\boldsymbol{u}, \nabla)\boldsymbol{u} = - \dfrac{\nabla p}{\rho} \\
+		& \rho c_p \dfrac{dT}{dt} - \dfrac{dp}{dt} = 0 \\
+		& p = \rho R T \\
+		& S = c_{v} \text{ ln} \left(\dfrac{p}{\rho^{\gamma}}\right) \\
+		& \Omega = \text{rot } \boldsymbol{u}
+	\end{aligned}\
+	\right. \quad
+	\Rightarrow \quad
+	\left\{
+	\begin{aligned}
+		& \dfrac{\partial \rho}{\partial t} + \dfrac{1}{r}\dfrac{\partial \rho u_r r}{\partial r} + \dfrac{1}{r}\dfrac{\partial \rho u_{\theta}}{\partial \theta} = 0 \\
+		& \dfrac{\partial u_r}{\partial t} + u_r \dfrac{\partial u_r}{\partial r} + \dfrac{u_{\theta}}{r}\dfrac{\partial u_r}{\partial \theta} - \dfrac{u_{\theta}^2}{r} = - \dfrac{1}{\rho}\dfrac{\partial p}{\partial r} \\
+		& \dfrac{\partial u_{\theta}}{\partial t} + u_r \dfrac{\partial u_{\theta}}{\partial r} + \dfrac{u_{\theta}}{r}\dfrac{\partial u_{\theta}}{\partial \theta} + \dfrac{u_{\theta}u_r}{r} = - \dfrac{1}{\rho r}\dfrac{\partial p}{\partial \theta} \\
+		& \rho c_p \left(\dfrac{\partial T}{\partial t} + u_r \dfrac{\partial T}{\partial r} + \dfrac{u_{\theta}}{r}\dfrac{\partial T}{\partial \theta}\right) - \dfrac{\partial p}{\partial t} - u_r \dfrac{\partial p}{\partial r} - \dfrac{u_{\theta}}{r}\dfrac{\partial p}{\partial \theta} = 0 \\
+		& p = \rho R T \\
+		& S = c_{v} \text{ ln} \left(\dfrac{p}{\rho^{\gamma}}\right) \\
+		& \Omega = \dfrac{1}{r}\left(\dfrac{\partial r u_{\theta}}{\partial r} - \dfrac{\partial u_r}{\partial \theta}\right)
+	\end{aligned}
+	\right.
+\end{equation}
+
+Lets find the mean flow in different formulations of the problem \eqref{hv-rho}, \eqref{hv-temp}, \eqref{hv-ent}, and then solve the corresponding perturbed problems.

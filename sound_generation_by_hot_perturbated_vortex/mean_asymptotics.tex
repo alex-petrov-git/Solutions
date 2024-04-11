@@ -1,0 +1,32 @@
+\subsection{Mean flow. Asymptotics for $\Omega \rightarrow 0$}
+
+It is interesting to consider the limiting case of low flow velocities ($\Omega \rightarrow 0$). In the case of semi-constant density, the search for asymptotics is not required; the expression \eqref{MF_scd_pressure} itself is the asymptotics. 
+\begin{enumerate}
+	\item Semi-constant temperature. Pressure asymptotics:
+	\begin{equation}
+		\label{MF_asym_sct_pressure}
+		p(r) = \left\{
+		\begin{aligned}
+			& p_{\infty} \left(1 + \dfrac{\gamma \Omega^2}{8}\left[\dfrac{1}{c_1^2}(r^2 - a^2) - \dfrac{a^2}{c_2^2}\right]\right), \, r \leqslant a \\
+			& p_{\infty} \left(1 - \dfrac{\gamma \Omega^2}{8} \dfrac{a^2}{c_2^2}\left(\dfrac{a}{r}\right)^2\right), \, r > a
+		\end{aligned}
+		\right.
+	\end{equation}
+	\item Semi-constant entropy. Pressure asymptotics:
+	\begin{equation}
+		\label{MF_asym_sce_pressure}
+		p(r) = \left\{
+		\begin{aligned}
+			& p_{\infty} \left(1 - \dfrac{C_2\Omega^2 a^2}{8p_{\infty}^{(\gamma-1)/\gamma}} - \dfrac{C_1\Omega^2}{8p_{\infty}^{(\gamma-1)/\gamma}}(a^2 - r^2)\right), \, r \leqslant a \\
+			& p_{\infty} \left(1 - \dfrac{C_2\Omega^2 a^2}{8p_{\infty}^{(\gamma-1)/\gamma}} \left(\dfrac{a}{r}\right)^2\right), \, r > a
+		\end{aligned}
+		\right.
+	\end{equation}
+
+Let me remind you that the constants correspond to the given thermodynamic parameters:
+\begin{equation}
+	c^2 = \gamma R T, \quad C = \exp\left(-\dfrac{S}{c_p}\right).
+\end{equation}
+
+And there are values of temperature $T_{1,2}$ and entropy $S_{1,2}$ such that expressions \eqref{MF_asym_sct_pressure} and \eqref{MF_asym_sce_pressure} coincide with expression \eqref{MF_scd_pressure}.
+\end{enumerate}

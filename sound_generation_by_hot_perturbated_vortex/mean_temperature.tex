@@ -1,0 +1,46 @@
+\subsection{Mean flow. Temperature is semi-constant}
+
+Let us express the density from the equation of state and substitute it into the momentum equation.
+\begin{equation}
+	\dfrac{u_{\theta}^2}{r} = \dfrac{c^2}{\gamma} \dfrac{d \ln p}{dr},
+\end{equation}
+where $c^2 = \gamma R T$. Therefore pressure field is:
+\begin{equation}
+	p(r) = \left\{
+	\begin{aligned}
+		& C_1 \exp \left( \dfrac{\gamma}{2}M_1^2 \left(\dfrac{r}{a}\right)^2\right), \, r \leqslant a \\
+		& C_2 \exp \left( - \dfrac{\gamma}{2}M_2^2 \left(\dfrac{a}{r}\right)^2\right), \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+where $M_{1,2} = u_{\theta max} / c_{1,2} = \Omega a/(2c_{1,2})$. The constants can be determined using density continuity and the condition at $\infty$:
+\begin{equation}
+	p(r) = \left\{
+	\begin{aligned}
+		& p_{\infty} \exp \left\{\dfrac{\gamma}{2} \left[M_1^2 \left(\left(\dfrac{r}{a}\right)^2 - 1 \right) - M_2^2 \right]\right\}, \, r \leqslant a \\
+		& p_{\infty} \exp \left( - \dfrac{\gamma}{2}M_2^2 \left(\dfrac{a}{r}\right)^2\right), \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	\rho(r) = \dfrac{\gamma p}{c^2} = \left\{
+	\begin{aligned}
+		& \dfrac{\gamma}{c_1^2} p_{\infty} \exp \left\{\dfrac{\gamma}{2} \left[M_1^2 \left(\left(\dfrac{r}{a}\right)^2 - 1 \right) - M_2^2 \right]\right\}, \, r \leqslant a \\
+		& \dfrac{\gamma}{c_2^2}p_{\infty} \exp \left( - \dfrac{\gamma}{2}M_2^2 \left(\dfrac{a}{r}\right)^2\right), \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	S(r) = c_{v} \text{ ln} \left(\dfrac{p}{\rho^{\gamma}}\right)
+\end{equation}
+
+\begin{equation}
+	T\nabla S = T \dfrac{dS}{dr} = \left\{
+	\begin{aligned}
+		& - \dfrac{\Omega^2 r}{4}, \, r \leqslant a \\
+		& - \dfrac{\Omega^2 a}{4} \left(\dfrac{a}{r}\right)^3, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}

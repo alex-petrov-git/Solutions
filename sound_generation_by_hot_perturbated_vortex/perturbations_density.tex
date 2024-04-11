@@ -1,0 +1,45 @@
+\subsection{Perturbations. Density is semi-constant.}
+
+For simplicity, we assume that there are no density perturbations. So, we can use stream-function:
+\begin{equation}
+	u_r = \dfrac{1}{r}\dfrac{\partial \psi}{\partial \theta}, \quad u_{\theta} = - \dfrac{\partial \psi}{\partial r}.
+\end{equation}
+
+Therefore governing equations (\textbf{ADD LINK}) transform into
+\begin{equation}
+	\label{PF_scd_governing_equations}
+	\left\{
+	\begin{aligned}
+		& (-i\omega)\dfrac{(in)}{r} \psi + \dfrac{u_{\theta 0}}{r} \dfrac{(in)^2}{r} \psi + \dfrac{2 u_{\theta 0}}{r} \psi' = - \dfrac{p'}{\rho_0}, \\
+		& (i\omega) \psi' + \dfrac{(in)}{r} \psi \left(\dfrac{du_{\theta 0}}{dr}\right) - u_{\theta 0}\dfrac{(in)}{r}\psi' + \dfrac{u_{\theta 0}}{r} \dfrac{(in)}{r} \psi = - \dfrac{(in)}{\rho_0 r} p.
+	\end{aligned}
+	\right.
+\end{equation}
+
+Getting rid of pressure, we obtain an equation for the stream function:
+\begin{equation}
+	\label{PF_scd_laplace}
+	[(i\omega)r - (in)u_{\theta 0}]\left(\psi'' + \dfrac{\psi'}{r} - \dfrac{n^2}{r^2}\psi \right) = 0
+\end{equation}
+
+Let us consider such flows, where term $(i\omega)r - (in)u_{\theta 0}$ is not zero. Then, solution of \eqref{PF_scd_laplace} is:
+\begin{equation}
+	\psi(r) = \left\{
+	\begin{aligned}
+		& C_1 r^n,\quad r < a, \\
+		& C_2 r^{-n}, \quad r \ge a
+	\end{aligned}
+	\right.
+\end{equation}
+
+Due to the condition of continuity of the normal velocity component, we conclude that the stream function must also be continuous, therefore
+\begin{equation}
+	\label{PF_scd_bc_vel}
+	C_1 a^n = C_2 a^{-n}
+\end{equation}
+
+Another boundary condition is density continuity. Substituting the stream function into the second equation of the system \eqref{PF_scd_governing_equations} and equating the pressure inside the vortex and outside it (at $r = a$), we obtain the dispersion relation:
+\begin{equation}
+	\omega_n = \dfrac{\Omega (n-1)}{1 + (\rho_2/\rho_1)}
+\end{equation}
+

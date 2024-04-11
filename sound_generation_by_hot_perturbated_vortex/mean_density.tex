@@ -1,0 +1,34 @@
+\subsection{Mean flow. Density is semi-constant}
+
+Solution for this case (using pressure continuity and the conditions at $\infty$): 
+\begin{equation}
+	\label{MF_scd_pressure}
+	p(r) = \left\{
+	\begin{aligned}
+		& p_{\infty} - \rho_2 \dfrac{\Omega^2 a^2}{8} - \rho_1 \dfrac{\Omega^2}{8} (a^2 - r^2), \, r \leqslant a \\
+		& p_{\infty} - \rho_2 \dfrac{\Omega^2 a^2}{8} \left(\dfrac{a}{r}\right)^2, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	T(r) = \dfrac{p}{\rho R} = \left\{
+	\begin{aligned}
+		& \dfrac{1}{\rho_1 R}\left( p_{\infty} - \rho_2 \dfrac{\Omega^2 a^2}{8} - \rho_1 \dfrac{\Omega^2}{8} (a^2 - r^2) \right), \, r \leqslant a \\
+		& \dfrac{1}{\rho_2 R}\left( p_{\infty} - \rho_2 \dfrac{\Omega^2 a^2}{8}\left(\dfrac{a}{r}\right)^2\right), \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
+
+\begin{equation}
+	S(r) = c_{v} \text{ ln} \left(\dfrac{p}{\rho^{\gamma}}\right)
+\end{equation}
+
+\begin{equation}
+	T\nabla S = T \dfrac{dS}{dr} = \left\{
+	\begin{aligned}
+		& \dfrac{1}{\gamma - 1} \dfrac{\Omega^2 r}{4}, \, r \leqslant a \\
+		& \dfrac{1}{\gamma - 1} \dfrac{\Omega^2 a}{4} \left(\dfrac{a}{r}\right)^3, \, r > a
+	\end{aligned}
+	\right.
+\end{equation}
